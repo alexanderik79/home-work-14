@@ -25,3 +25,7 @@ input, textarea{
 textarea {
     height: 150px !important;
 }
+
+img {
+    border-radius: 5px;
+}
