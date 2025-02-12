@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Адаптивний макет</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="bg-secondary p-3 text-center">
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Меню</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Про нас</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-3">
+        <div class="row">
+            <aside class="col-lg-3 col-md-4 col-12 mb-3">
+                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="images/photo1.jpg" class="d-block w-100" alt="Cars"></div>
+                        <div class="carousel-item"><img src="images/photo2.jpg" class="d-block w-100" alt="Cars"></div>
+                        <div class="carousel-item"><img src="images/photo3.jpg" class="d-block w-100" alt="Cars"></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </aside>
+
+            <main class="col-lg-6 col-md-8 col-12 mb-3">
+                <div class="accordion " id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Акордеон 1</button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, culpa consequatur accusantium ipsam atque cum quo laborum praesentium, ipsum reprehenderit, suscipit totam magnam excepturi sint corporis tenetur cumque itaque placeat.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Акордеон 2</button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis itaque eveniet cumque laudantium iusto quisquam excepturi architecto! Nemo, doloremque amet. Aliquam, optio voluptatibus? Reiciendis, eveniet? Sit atque facere ipsum ipsa?</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">Акордеон 3</button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, consequuntur sequi expedita est aut beatae necessitatibus! Odio error doloremque enim nesciunt? Non nostrum facilis eum tempore. Autem vel tempore optio!</div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <aside class="col-lg-3 col-md-12 col-12 mb-3">
+                <form action="/some-action" method="POST" enctype="text/plain">
+                    <!-- <div class="mb-3">
+                        <label for="name" class="form-label">Ім'я</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div> -->
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Ім'я" required>
+                        <label for="name">Ім'я</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="surname" placeholder="Прізвище" required>
+                        <label for="surname">Прізвище</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="phone" placeholder="Телефон" required>
+                        <label for="phone" class="form-label">Телефон</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="message" placeholder="Ваше повідомлення" required></textarea>
+                        <label for="message">Повідомлення</label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Відправити</button>
+                    <button type="reset" class="btn btn-secondary">Очистити</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+    
+    <footer class="bg-light p-3 text-center mt-3">
+        <p>© 2025 Всі права захищені.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
