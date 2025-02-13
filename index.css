@@ -1,16 +1,6 @@
-.accordion-item {
-    background-color: #f8f9fa; 
-    /* border: 1px solid #ddd;  */
-}
-
 .accordion-header .accordion-button {
     background-color: #6c757d; 
     color: white; 
-}
-
-.accordion-button:not(.collapsed) {
-    background-color: #6c757d;
-    color: white;
 }
 
 .accordion-body {
@@ -20,8 +10,4 @@
 
 textarea {
     height: 150px !important;
-}
-
-img {
-    border-radius: 5px;
 }
